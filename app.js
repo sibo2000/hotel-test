@@ -10,7 +10,7 @@ const api = require('./routes/api');
 
 const app = express();
 
-mongoose.connect(process.argv.slice(2))
+mongoose.connect(process.env.MONGODB_URI)
 
 // Parsers for POST data
 app.use(bodyParser.json());
