@@ -1,0 +1,63 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <a class="btn btn-default pull-right" role="button" data-toggle="collapse" href="#filters" aria-expanded="false" aria-controls="filters">
+      <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </a>
+    <h4>Filter</h4>    
+  </div>
+  <div class="collapse" id="filters">
+    <div class="panel-body">
+      <form [formGroup]="filterForm" class="form-horizontal">
+        <div class="form-group">
+          <div class="col-sm-6">
+            <label for="name" class="control-label"><span class="glyphicon glyphicon-bed"></span> Name</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" formControlName="name">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-6">
+            <label for="stars" class="control-label"><span class="glyphicon glyphicon-star"></span> Stars</label>
+          </div>
+          <div class="col-sm-6">
+            <select class="form-control" class="form-control" formControlName="stars">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-6">
+            <label for="userRating" class="control-label"><span class="glyphicon glyphicon-thumbs-up"></span> User rating</label>
+          </div>
+          <div class="col-sm-6">
+            <select class="form-control" class="form-control" formControlName="userRating">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>          
+              <option>9</option>
+            </select>
+          </div>
+        </div>      
+        <div class="form-group">
+          <div class="col-sm-6">
+            <label for="minCost" class="control-label"><span class="glyphicon glyphicon-gbp"></span> Min Cost</label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" formControlName="minCost">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

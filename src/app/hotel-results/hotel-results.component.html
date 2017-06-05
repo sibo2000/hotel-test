@@ -1,0 +1,18 @@
+<div class="row" *ngFor="let hotel of hotels">  
+  <div class="col-xs-3">
+    <img src="{{hotel.ImageUrl}}" class="img-responsive img-thumbnail" alt="{{hotel.Name}}">
+  </div>
+  <div class="col-xs-9">
+    <h3>{{hotel.Name}}</h3>
+    <div>
+      <span class="glyphicon glyphicon-star" 
+            aria-hidden="true"
+            *ngFor="let i of Arr(hotel.Stars).fill(1)"></span>        
+    </div>
+    <h4>Min Cost &pound;{{hotel.MinCost}}</h4>
+    <p>User rating <span class="badge bg-success">{{hotel.UserRating}}</span></p>
+    <p>Distance {{hotel.Distance | number : '1.2-2'}}</p>
+  </div>
+  <hr>
+</div>
+

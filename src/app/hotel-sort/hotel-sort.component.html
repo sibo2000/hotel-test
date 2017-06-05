@@ -1,0 +1,18 @@
+<div class="text-right">  
+  <form class="form-inline" [formGroup]="sortForm">  
+    <div class="form-group">
+      <label for="sort">Sort by</label>
+      <select class="form-control" formControlName="sortBy">
+        <option value="">-</option>
+        <option value="Distance">Distance (closest)</option>
+        <option value="-Distance">Distance (farthest)</option>
+        <option value="-Stars">Stars (highest)</option>
+        <option value="Stars">Stars (lowest)</option>
+        <option value="-MinCost">Min Cost (highest)</option>
+        <option value="MinCost">Min Cost (lowest)</option>
+        <option value="-UserRating">User Rating (highest)</option>
+        <option value="UserRating">Use Rating (lowest)</option>
+      </select>
+    </div>  
+  </form>
+</div>

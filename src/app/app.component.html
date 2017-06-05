@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="page-header">
+        <h1>
+          {{title}}
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-3">
+      <app-hotel-filter (filtersUpdated)="handleFiltersUpdated($event)"></app-hotel-filter>
+    </div>
+    <div class="col-xs-12 col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>{{numHotels}} Results</h4>          
+        </div>
+        <div class="panel-body">
+          <app-hotel-sort (sortUpdated)="handleSortUpdated($event)"></app-hotel-sort>    
+          <hr>
+          <app-hotel-results [hotels]="hotels"></app-hotel-results>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
