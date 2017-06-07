@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   hotels: Hotel[]
   numHotels: number;
 
-  url = 'http://localhost:3000/api/hotels';
+  url = 'api/hotels';
   filters = '?name=';
   sort = '&sort=';
 

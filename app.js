@@ -10,7 +10,7 @@ const api = require('./routes/api');
 
 const app = express();
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI || 'localhost:27017/travel-republic')
 
 // Parsers for POST data
 app.use(bodyParser.json());

@@ -116,7 +116,7 @@ var AppComponent = (function () {
     function AppComponent(hotelService) {
         this.hotelService = hotelService;
         this.title = 'Hotel Search';
-        this.url = 'http://localhost:3000/api/hotels';
+        this.url = 'api/hotels';
         this.filters = '?name=';
         this.sort = '&sort=';
     }
